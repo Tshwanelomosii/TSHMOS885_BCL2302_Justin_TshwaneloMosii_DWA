@@ -9,7 +9,7 @@ let page = 1; // Current page number
 let matches = books; // List of books that match the search filters
 
 /**
- * Creates a button element for a book.
+ * Creates a button element for a book jsDoc comments .
  * @param {Object} book - The book object.
  * @param {string} book.author - The author of the book.
  * @param {string} book.id - The ID of the book.
@@ -82,7 +82,7 @@ settingsTheme.value = prefersDarkMode ? 'night' : 'day';
 document.documentElement.style.setProperty('--color-dark', prefersDarkMode ? '255, 255, 255' : '10, 10, 20');
 document.documentElement.style.setProperty('--color-light', prefersDarkMode ? '10, 10, 20' : '255, 255, 255');
 
-// Updates the "Show more" button text and remaining book count. 
+// Updates the "Show more" button text and remaining book count using abstraction Function . 
 const updateListButton = () => {
   const remaining = Math.max(matches.length - page * BOOKS_PER_PAGE, 0);
   const listButton = document.querySelector('[data-list-button]');
