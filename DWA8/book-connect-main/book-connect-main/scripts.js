@@ -82,7 +82,7 @@ function createButtonElement(book) {
   return previewElement;
 }
 
-console.log(createButtonElement);
+
 
 
 

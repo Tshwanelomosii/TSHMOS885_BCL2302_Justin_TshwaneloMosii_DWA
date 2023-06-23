@@ -1,6 +1,6 @@
 // book-review.js
 // Define a custom element for the book preview
-class BookPreview extends HTMLElement {
+export class BookPreview extends HTMLElement {
     constructor() {
       super();
       // Create a shadow DOM for the element

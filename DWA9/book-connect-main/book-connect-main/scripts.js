@@ -7,8 +7,7 @@
 
 import { books, authors, genres, BOOKS_PER_PAGE } from './data.js';
 
-let page = 1; // Current page number
-let matches = books; // List of books that match the search filters
+import {bookPreview } from "./book-review.js"
 
 /**
  * Creates a button element for a book jsDoc comments .
@@ -19,7 +18,7 @@ let matches = books; // List of books that match the search filters
  * @param {string} book.title - The title of the book.
  * @returns {HTMLButtonElement} The created button element.
  */// scripts.js
-import { BOOKS_PER_PAGE, authors, books, genres } from "./data.js";
+
 // Initialize page and matches
 let page = 1;
 let matches = books;
