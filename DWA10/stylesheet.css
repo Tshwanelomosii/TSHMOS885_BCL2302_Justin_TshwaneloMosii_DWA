@@ -2,7 +2,7 @@ body{
     margin: 0;
     height: 100%;
     padding: 5px;
-    background-color:dimgray;
+    background-color:rgba(105, 105, 105, 0.781);
 }
 
 input{
@@ -10,7 +10,7 @@ input{
     height: 10rem;
     text-align: center;
     font-size: 100px;
-    background-color: cornflowerblue;
+    background-color: rgb(194, 100, 237);
 }
 
 .button{
@@ -27,5 +27,5 @@ border: solid black;
 }
 
 footer{
-    background-color: aquamarine;
+    background-color: rgb(127, 255, 144);
 }
