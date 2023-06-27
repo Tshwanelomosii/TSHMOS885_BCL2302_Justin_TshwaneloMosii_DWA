@@ -1,6 +1,7 @@
 //STORE.JS
 // Redux-inspired store implementation
-const createStore = (reducer) => {
+
+const createretail = (reducer) => {
     let state;
     const listeners = [];
     const getState = () => state;
@@ -20,16 +21,20 @@ const createStore = (reducer) => {
     switch (action.type) {
       case 'ADD':
         return state + 1;
+
+
       case 'SUBTRACT':
         return state - 1;
       case 'RESET':
+
+      
         return 0;
       default:
         return state;
     }
   };
   // Create the store with the tallyReducer
-  const store = createStore(tallyReducer);
+  const store = createretail(tallyReducer);
   // Log the state to the console whenever it changes
   store.subscribe(() => {
     console.log('State:', store.getState());
