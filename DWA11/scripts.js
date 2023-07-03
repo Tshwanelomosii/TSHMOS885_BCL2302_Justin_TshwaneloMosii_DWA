@@ -1,7 +1,7 @@
 //STORE.JS
 // Redux-inspired store implementation
 
-const createretail = (reducer) => {
+const createStore = (reducer) => {
     let state;
     const listeners = [];
     const getState = () => state;
@@ -34,7 +34,7 @@ const createretail = (reducer) => {
     }
   };
   // Create the store with the tallyReducer
-  const store = createretail(tallyReducer);
+  const store = createStore(tallyReducer);
   // Log the state to the console whenever it changes
   store.subscribe(() => {
     console.log('State:', store.getState());
