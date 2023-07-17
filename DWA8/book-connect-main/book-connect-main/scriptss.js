@@ -21,37 +21,7 @@ let matches = books; // List of books that match the search filters
  */
 
 
-// function createButtonElement(book) {
-//   const { author,id, image, title, description } = book
-//   const element = document.createElement('div');
-//   element.classList.add('book-preview');
-//   element.setAttribute('book-preview',id)
-  
-//   const imageElement = document.createElement('img');
-//   imageElement.classList.add('book-preview__image');
-//   imageElement.src = image;
-//   element.appendChild(imageElement);
-  
-//   const infoElement = document.createElement('div');
-//   infoElement.classList.add('book-preview__info');
-  
-//   const titleElement = document.createElement('h3');
-//   titleElement.classList.add('book-preview__title');
-//   titleElement.textContent = title;
-//   infoElement.appendChild(titleElement);
-  
-//   const authorElement = document.createElement('div');
-//   authorElement.classList.add('book-preview__author');
-//   authorElement.textContent = authors[author];
-//   infoElement.appendChild(authorElement);
-  
-//   const descriptionElement = document.createElement('div');
-//   descriptionElement.classList.add('book-preview__description');
-//   descriptionElement.textContent = description;
-//   infoElement.appendChild(descriptionElement);
-//   element.appendChild(infoElement);
-//   return element;
-// }
+
  
 function createButtonElement(book) {
   const { author, id, image, title } = book;
